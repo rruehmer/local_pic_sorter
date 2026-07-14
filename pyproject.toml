@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "local_pic_sorter"
+version = "0.1.0"
+description = "A local-first photo sorting tool for organizing images on disk"
+authors = ["Ricardo Ruehmer r.ruehmer@gmx.de"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+typer = {extras = ["all"], version = "^0.12.0"}
+pillow = "^10.4.0"
+pillow-heif = "^0.22.0"
+exif = "^1.6.0"
+logging = "^0.4.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.9.0"]
+build-backend = "poetry.core.masonry.api"
