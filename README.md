@@ -63,8 +63,8 @@ poetry install
 
 ### Activate the virtual environment
 
-```bash
-poetry poetry env activate
+```PowerShell
+Invoke-Expression (poetry env activate)
 ```
 INFO: You might have to set the execution policy with the following command in order for the environment to activate:
 ```
