@@ -23,7 +23,7 @@ def app():
 @click.option(
     "--dry-run",
     is_flag=True,
-    default=False,
+    default=True,
     help="Simulate the sorting process without actually moving files",
 )
 def sort_photos(source: str, destination: str, dry_run: bool):
